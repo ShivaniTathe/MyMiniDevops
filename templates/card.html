@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Tarot Card</title>
-</head>
-<body>
-    <h1>Your Tarot Card</h1>
-    <h2>{{ card.name }}</h2>
-    <p>{{ card.meaning }}</p>
-    <img src="{{ card.image }}" alt="{{ card.name }}" width="300" height="500">
-    <a href="/">back</a>
-</body>
-</html>
+<div class="card" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="{{ card.frontImage }}" alt="{{ card.name }}" style="width: 100%; height: 100%;">
+        </div>
+        <div class="card-back">
+            <img src="{{ card.backImage }}" alt="Card Back" style="width: 100%; height: 100%;">
+        </div>
+    </div>
+</div>
