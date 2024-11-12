@@ -3,7 +3,7 @@ import random
 
 app = Flask(__name__)
 
-# Sample data for cards
+#Sample data for cards
 cards = [
     {"name": "The Fool", "frontImage": "static/images/the_fool.jpg", "backImage": "static/images/back.jpg"},
     {"name": "The Magician", "frontImage": "static/images/the_magician.jpg", "backImage": "static/images/back.jpg"},
